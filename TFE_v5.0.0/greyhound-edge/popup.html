@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="tfe-popup-body-root">
+<div class="tfe-popup">
+
+  <div class="tfe-popup-head">
+    <h2>GREYHOUND EDGE v5</h2>
+    <p>Scoring weights, filters &amp; display settings</p>
+  </div>
+
+  <div class="tfe-section">
+    <div class="tfe-section-title">⚖ Scoring Weights (total = 100)</div>
+
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Speed (Avg TF Time)<small>vs field, same distance</small></div>
+      <input class="tfe-weight-slider" type="range" id="wSpeed" min="0" max="40" step="1" value="28">
+      <span class="tfe-weight-val" id="wSpeed-val">25</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Form Rating<small>Decay-weighted avg Rtg</small></div>
+      <input class="tfe-weight-slider" type="range" id="wRating" min="0" max="40" step="1" value="22">
+      <span class="tfe-weight-val" id="wRating-val">22</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Sectional Rating<small>Trap exit / early pace</small></div>
+      <input class="tfe-weight-slider" type="range" id="wSectional" min="0" max="30" step="1" value="30">
+      <span class="tfe-weight-val" id="wSectional-val">30</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Consistency (σ)<small>Finish position variance</small></div>
+      <input class="tfe-weight-slider" type="range" id="wConsistency" min="0" max="30" step="1" value="2">
+      <span class="tfe-weight-val" id="wConsistency-val">2</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Trap Affinity<small>Win% this trap (track first)</small></div>
+      <input class="tfe-weight-slider" type="range" id="wTrapAffinity" min="0" max="25" step="1" value="0">
+      <span class="tfe-weight-val" id="wTrapAffinity-val">0</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Form Trend<small>Last 3 vs prev 3 ratings</small></div>
+      <input class="tfe-weight-slider" type="range" id="wTrend" min="0" max="25" step="1" value="0">
+      <span class="tfe-weight-val" id="wTrend-val">0</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Grade Suitability<small>Dropping / rising in class</small></div>
+      <input class="tfe-weight-slider" type="range" id="wGrade" min="0" max="25" step="1" value="0">
+      <span class="tfe-weight-val" id="wGrade-val">0</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Clean Run Rate<small>% runs without interference</small></div>
+      <input class="tfe-weight-slider" type="range" id="wCleanRun" min="0" max="20" step="1" value="0">
+      <span class="tfe-weight-val" id="wCleanRun-val">10</span>
+    </div>
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Finishing Momentum<small>Avg places gained per run</small></div>
+      <input class="tfe-weight-slider" type="range" id="wMomentum" min="0" max="20" step="1" value="1">
+      <span class="tfe-weight-val" id="wMomentum-val">0</span>
+    </div>
+
+    <div class="tfe-weight-row">
+      <div class="tfe-weight-label">Trainer Edge<small>Profitable trainer at this track</small></div>
+      <input class="tfe-weight-slider" type="range" id="wTrainer" min="0" max="20" step="1" value="8">
+      <span class="tfe-weight-val" id="wTrainer-val">8</span>
+    </div>
+
+    <div class="tfe-weight-total" id="weightTotal">Total: <b>100</b> ✓</div>
+  </div>
+
+  <div class="tfe-section">
+    <div class="tfe-section-title">🔬 Analysis Options</div>
+    <div class="tfe-toggle-row">
+      <div class="tfe-toggle-label">Distance Filter
+        <small>Speed uses same-distance runs only</small>
+      </div>
+      <label class="tfe-switch"><input type="checkbox" id="distanceFilter" checked><span class="tfe-slider"></span></label>
+    </div>
+    <div class="tfe-toggle-row">
+      <div class="tfe-toggle-label">Decay Weighting
+        <small>Recent runs count more</small>
+      </div>
+      <label class="tfe-switch"><input type="checkbox" id="decayWeighting" checked><span class="tfe-slider"></span></label>
+    </div>
+  </div>
+
+  <div class="tfe-section">
+    <div class="tfe-nruns-row">
+      <label for="nRuns">Runs to analyse:</label>
+      <input class="tfe-nruns-input" type="number" id="nRuns" min="1" max="10" value="5">
+    </div>
+    <div style="font-size:8.5px;color:#1e3a5a;margin-bottom:5px">Sidebar position:</div>
+    <div class="tfe-pos-row">
+      <div class="tfe-pos-btn active" id="posRight" onclick="setPos('right')">▶ Right</div>
+      <div class="tfe-pos-btn" id="posLeft"  onclick="setPos('left')">◀ Left</div>
+    </div>
+  </div>
+
+  <div style="padding:0 14px">
+    <button class="tfe-save-btn" id="saveBtn">💾 Save &amp; Reload</button>
+    <div class="tfe-saved-msg" id="savedMsg"></div>
+  </div>
+
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

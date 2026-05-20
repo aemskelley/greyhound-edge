@@ -1,0 +1,683 @@
+{
+  "Harlow": {
+    "A4:415": {
+      "grade": "A4",
+      "dist": 415,
+      "par": 26.91,
+      "n": 20,
+      "fallback": false
+    },
+    "A5:415": {
+      "grade": "A5",
+      "dist": 415,
+      "par": 26.94,
+      "n": 60,
+      "fallback": false
+    },
+    "A6:415": {
+      "grade": "A6",
+      "dist": 415,
+      "par": 27.13,
+      "n": 108,
+      "fallback": false
+    },
+    "A7:415": {
+      "grade": "A7",
+      "dist": 415,
+      "par": 27.39,
+      "n": 196,
+      "fallback": false
+    },
+    "D2:238": {
+      "grade": "D2",
+      "dist": 238,
+      "par": 15.3,
+      "n": 21,
+      "fallback": false
+    },
+    "D3:238": {
+      "grade": "D3",
+      "dist": 238,
+      "par": 15.47,
+      "n": 80,
+      "fallback": false
+    },
+    "D4:238": {
+      "grade": "D4",
+      "dist": 238,
+      "par": 15.62,
+      "n": 193,
+      "fallback": false
+    },
+    "D5:238": {
+      "grade": "D5",
+      "dist": 238,
+      "par": 15.92,
+      "n": 238,
+      "fallback": false
+    },
+    "IT:238": {
+      "grade": "IT",
+      "dist": 238,
+      "par": 15.74,
+      "n": 20,
+      "fallback": false
+    },
+    "IT:415": {
+      "grade": "IT",
+      "dist": 415,
+      "par": 27.28,
+      "n": 22,
+      "fallback": false
+    }
+  },
+  "Yarmouth": {
+    "A1:462": {
+      "grade": "A1",
+      "dist": 462,
+      "par": 27.8,
+      "n": 41,
+      "fallback": false
+    },
+    "A2:462": {
+      "grade": "A2",
+      "dist": 462,
+      "par": 28.11,
+      "n": 50,
+      "fallback": false
+    },
+    "A3:462": {
+      "grade": "A3",
+      "dist": 462,
+      "par": 28.24,
+      "n": 57,
+      "fallback": false
+    },
+    "A4:462": {
+      "grade": "A4",
+      "dist": 462,
+      "par": 28.33,
+      "n": 56,
+      "fallback": false
+    },
+    "A5:462": {
+      "grade": "A5",
+      "dist": 462,
+      "par": 28.42,
+      "n": 76,
+      "fallback": false
+    },
+    "A6:462": {
+      "grade": "A6",
+      "dist": 462,
+      "par": 28.57,
+      "n": 57,
+      "fallback": false
+    },
+    "A7:462": {
+      "grade": "A7",
+      "dist": 462,
+      "par": 28.7,
+      "n": 46,
+      "fallback": false
+    },
+    "A8:462": {
+      "grade": "A8",
+      "dist": 462,
+      "par": 28.81,
+      "n": 35,
+      "fallback": false
+    }
+  },
+  "Kinsley": {
+    "A4:462": {
+      "grade": "A4",
+      "dist": 462,
+      "par": 28.39,
+      "n": 32,
+      "fallback": false
+    },
+    "A5:462": {
+      "grade": "A5",
+      "dist": 462,
+      "par": 28.57,
+      "n": 55,
+      "fallback": false
+    },
+    "A6:462": {
+      "grade": "A6",
+      "dist": 462,
+      "par": 28.77,
+      "n": 91,
+      "fallback": false
+    },
+    "A7:462": {
+      "grade": "A7",
+      "dist": 462,
+      "par": 28.94,
+      "n": 54,
+      "fallback": false
+    },
+    "A8:462": {
+      "grade": "A8",
+      "dist": 462,
+      "par": 29.22,
+      "n": 40,
+      "fallback": false
+    },
+    "D3:268": {
+      "grade": "D3",
+      "dist": 268,
+      "par": 16.57,
+      "n": 70,
+      "fallback": false
+    },
+    "D4:268": {
+      "grade": "D4",
+      "dist": 268,
+      "par": 16.69,
+      "n": 58,
+      "fallback": false
+    },
+    "D5:268": {
+      "grade": "D5",
+      "dist": 268,
+      "par": 16.94,
+      "n": 29,
+      "fallback": false
+    }
+  },
+  "Doncaster": {
+    "A2:483": {
+      "grade": "A2",
+      "dist": 483,
+      "par": 29.98,
+      "n": 51,
+      "fallback": false
+    },
+    "B1:450": {
+      "grade": "B1",
+      "dist": 450,
+      "par": 27.85,
+      "n": 28,
+      "fallback": false
+    },
+    "B2:450": {
+      "grade": "B2",
+      "dist": 450,
+      "par": 28.04,
+      "n": 47,
+      "fallback": false
+    },
+    "B3:450": {
+      "grade": "B3",
+      "dist": 450,
+      "par": 28.19,
+      "n": 33,
+      "fallback": false
+    },
+    "B4:450": {
+      "grade": "B4",
+      "dist": 450,
+      "par": 28.28,
+      "n": 20,
+      "fallback": false
+    },
+    "B5:450": {
+      "grade": "B5",
+      "dist": 450,
+      "par": 28.46,
+      "n": 23,
+      "fallback": true
+    },
+    "B6:450": {
+      "grade": "B6",
+      "dist": 450,
+      "par": 28.62,
+      "n": 22,
+      "fallback": true
+    },
+    "B7:450": {
+      "grade": "B7",
+      "dist": 450,
+      "par": 28.89,
+      "n": 24,
+      "fallback": true
+    },
+    "D2:275": {
+      "grade": "D2",
+      "dist": 275,
+      "par": 17.21,
+      "n": 37,
+      "fallback": false
+    },
+    "D3:275": {
+      "grade": "D3",
+      "dist": 275,
+      "par": 17.36,
+      "n": 86,
+      "fallback": false
+    },
+    "D4:275": {
+      "grade": "D4",
+      "dist": 275,
+      "par": 17.58,
+      "n": 54,
+      "fallback": false
+    }
+  },
+  "Monmore": {
+    "A10:480": {
+      "grade": "A10",
+      "dist": 480,
+      "par": 29.58,
+      "n": 57,
+      "fallback": false
+    },
+    "A4:480": {
+      "grade": "A4",
+      "dist": 480,
+      "par": 28.93,
+      "n": 24,
+      "fallback": true
+    },
+    "A5:480": {
+      "grade": "A5",
+      "dist": 480,
+      "par": 28.94,
+      "n": 29,
+      "fallback": false
+    },
+    "A6:480": {
+      "grade": "A6",
+      "dist": 480,
+      "par": 29.07,
+      "n": 32,
+      "fallback": false
+    },
+    "A7:480": {
+      "grade": "A7",
+      "dist": 480,
+      "par": 29.16,
+      "n": 44,
+      "fallback": false
+    },
+    "A8:480": {
+      "grade": "A8",
+      "dist": 480,
+      "par": 29.28,
+      "n": 38,
+      "fallback": false
+    },
+    "A9:480": {
+      "grade": "A9",
+      "dist": 480,
+      "par": 29.49,
+      "n": 35,
+      "fallback": false
+    },
+    "D4:264": {
+      "grade": "D4",
+      "dist": 264,
+      "par": 15.98,
+      "n": 45,
+      "fallback": false
+    }
+  },
+  "Sunderland": {
+    "A2:450": {
+      "grade": "A2",
+      "dist": 450,
+      "par": 27.65,
+      "n": 38,
+      "fallback": false
+    },
+    "A3:450": {
+      "grade": "A3",
+      "dist": 450,
+      "par": 27.75,
+      "n": 32,
+      "fallback": false
+    },
+    "A4:450": {
+      "grade": "A4",
+      "dist": 450,
+      "par": 27.91,
+      "n": 46,
+      "fallback": false
+    },
+    "A5:450": {
+      "grade": "A5",
+      "dist": 450,
+      "par": 28.02,
+      "n": 36,
+      "fallback": false
+    },
+    "A6:450": {
+      "grade": "A6",
+      "dist": 450,
+      "par": 28.09,
+      "n": 28,
+      "fallback": false
+    },
+    "D4:261": {
+      "grade": "D4",
+      "dist": 261,
+      "par": 16.29,
+      "n": 23,
+      "fallback": false
+    }
+  },
+  "Romford": {
+    "A10:400": {
+      "grade": "A10",
+      "dist": 400,
+      "par": 24.68,
+      "n": 21,
+      "fallback": false
+    },
+    "A11:400": {
+      "grade": "A11",
+      "dist": 400,
+      "par": 25.0,
+      "n": 30,
+      "fallback": false
+    },
+    "A12:400": {
+      "grade": "A12",
+      "dist": 400,
+      "par": 25.02,
+      "n": 40,
+      "fallback": false
+    },
+    "A4:400": {
+      "grade": "A4",
+      "dist": 400,
+      "par": 24.39,
+      "n": 34,
+      "fallback": false
+    },
+    "A5:400": {
+      "grade": "A5",
+      "dist": 400,
+      "par": 24.38,
+      "n": 39,
+      "fallback": false
+    },
+    "A6:400": {
+      "grade": "A6",
+      "dist": 400,
+      "par": 24.46,
+      "n": 39,
+      "fallback": false
+    },
+    "A7:400": {
+      "grade": "A7",
+      "dist": 400,
+      "par": 24.58,
+      "n": 33,
+      "fallback": false
+    },
+    "A8:400": {
+      "grade": "A8",
+      "dist": 400,
+      "par": 24.56,
+      "n": 29,
+      "fallback": false
+    },
+    "A9:400": {
+      "grade": "A9",
+      "dist": 400,
+      "par": 24.67,
+      "n": 29,
+      "fallback": false
+    }
+  },
+  "CentralPark": {
+    "A3:491": {
+      "grade": "A3",
+      "dist": 491,
+      "par": 29.78,
+      "n": 25,
+      "fallback": false
+    },
+    "A4:491": {
+      "grade": "A4",
+      "dist": 491,
+      "par": 29.92,
+      "n": 30,
+      "fallback": false
+    },
+    "A5:491": {
+      "grade": "A5",
+      "dist": 491,
+      "par": 30.01,
+      "n": 27,
+      "fallback": false
+    },
+    "D3:277": {
+      "grade": "D3",
+      "dist": 277,
+      "par": 16.9,
+      "n": 20,
+      "fallback": false
+    },
+    "D4:277": {
+      "grade": "D4",
+      "dist": 277,
+      "par": 16.98,
+      "n": 41,
+      "fallback": false
+    },
+    "D5:277": {
+      "grade": "D5",
+      "dist": 277,
+      "par": 17.09,
+      "n": 35,
+      "fallback": false
+    }
+  },
+  "Nottingham": {
+    "A1:500": {
+      "grade": "A1",
+      "dist": 500,
+      "par": 30.09,
+      "n": 28,
+      "fallback": false
+    },
+    "A2:500": {
+      "grade": "A2",
+      "dist": 500,
+      "par": 30.34,
+      "n": 53,
+      "fallback": false
+    },
+    "A3:500": {
+      "grade": "A3",
+      "dist": 500,
+      "par": 30.55,
+      "n": 42,
+      "fallback": false
+    },
+    "A4:500": {
+      "grade": "A4",
+      "dist": 500,
+      "par": 30.86,
+      "n": 38,
+      "fallback": false
+    },
+    "A5:500": {
+      "grade": "A5",
+      "dist": 500,
+      "par": 31.04,
+      "n": 37,
+      "fallback": false
+    },
+    "A6:500": {
+      "grade": "A6",
+      "dist": 500,
+      "par": 31.19,
+      "n": 22,
+      "fallback": true
+    }
+  },
+  "Oxford": {
+    "A2:450": {
+      "grade": "A2",
+      "dist": 450,
+      "par": 27.08,
+      "n": 21,
+      "fallback": false
+    },
+    "A3:450": {
+      "grade": "A3",
+      "dist": 450,
+      "par": 27.3,
+      "n": 28,
+      "fallback": false
+    },
+    "A4:450": {
+      "grade": "A4",
+      "dist": 450,
+      "par": 27.34,
+      "n": 21,
+      "fallback": false
+    },
+    "A5:450": {
+      "grade": "A5",
+      "dist": 450,
+      "par": 27.4,
+      "n": 24,
+      "fallback": true
+    },
+    "D3:253": {
+      "grade": "D3",
+      "dist": 253,
+      "par": 15.52,
+      "n": 34,
+      "fallback": false
+    }
+  },
+  "DunstallPark": {
+    "A5:480": {
+      "grade": "A5",
+      "dist": 480,
+      "par": 29.06,
+      "n": 24,
+      "fallback": false
+    },
+    "A6:480": {
+      "grade": "A6",
+      "dist": 480,
+      "par": 29.2,
+      "n": 39,
+      "fallback": false
+    },
+    "A7:480": {
+      "grade": "A7",
+      "dist": 480,
+      "par": 29.36,
+      "n": 22,
+      "fallback": false
+    },
+    "D3:270": {
+      "grade": "D3",
+      "dist": 270,
+      "par": 16.34,
+      "n": 50,
+      "fallback": false
+    },
+    "D4:270": {
+      "grade": "D4",
+      "dist": 270,
+      "par": 16.6,
+      "n": 20,
+      "fallback": false
+    }
+  },
+  "PerryBarr": {
+    "A3:480": {
+      "grade": "A3",
+      "dist": 480,
+      "par": 28.82,
+      "n": 22,
+      "fallback": true
+    },
+    "A4:480": {
+      "grade": "A4",
+      "dist": 480,
+      "par": 28.98,
+      "n": 20,
+      "fallback": false
+    },
+    "A5:480": {
+      "grade": "A5",
+      "dist": 480,
+      "par": 29.19,
+      "n": 20,
+      "fallback": true
+    },
+    "A6:480": {
+      "grade": "A6",
+      "dist": 480,
+      "par": 29.26,
+      "n": 22,
+      "fallback": true
+    },
+    "A7:480": {
+      "grade": "A7",
+      "dist": 480,
+      "par": 29.44,
+      "n": 23,
+      "fallback": true
+    },
+    "A8:480": {
+      "grade": "A8",
+      "dist": 480,
+      "par": 29.67,
+      "n": 20,
+      "fallback": false
+    },
+    "D3:275": {
+      "grade": "D3",
+      "dist": 275,
+      "par": 16.6,
+      "n": 27,
+      "fallback": false
+    }
+  },
+  "Swindon": {
+    "D4:262": {
+      "grade": "D4",
+      "dist": 262,
+      "par": 15.88,
+      "n": 20,
+      "fallback": false
+    }
+  },
+  "Towcester": {
+    "D3:270": {
+      "grade": "D3",
+      "dist": 270,
+      "par": 16.35,
+      "n": 22,
+      "fallback": false
+    },
+    "D4:270": {
+      "grade": "D4",
+      "dist": 270,
+      "par": 16.49,
+      "n": 27,
+      "fallback": false
+    }
+  },
+  "Hove": {
+    "D4:285": {
+      "grade": "D4",
+      "dist": 285,
+      "par": 17.03,
+      "n": 21,
+      "fallback": true
+    }
+  }
+}

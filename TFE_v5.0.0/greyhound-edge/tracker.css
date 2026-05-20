@@ -1,0 +1,224 @@
+/* ── TF Tracker — Result Panel & Dashboard ── */
+
+#tfe-result-panel,
+#tfe-dashboard {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;
+  max-height: calc(100vh - 40px);
+  overflow: hidden;
+  z-index: 999999;
+  background: #070710;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  box-shadow: 0 16px 56px rgba(0,0,0,0.85);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 12px;
+  color: #ccd;
+  display: flex;
+  flex-direction: column;
+}
+
+.tfe-rp-header {
+  background: linear-gradient(135deg, #0a1e3a, #070710);
+  padding: 9px 12px;
+  border-bottom: 1px solid #1a3050;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
+  cursor: grab;
+}
+
+.tfe-rp-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: #4a9eff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tfe-rp-race {
+  flex: 1;
+  font-size: 10px;
+  color: #6a8aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tfe-rp-close {
+  background: none;
+  border: 1px solid #1e2e40;
+  color: #3a5a7a;
+  border-radius: 4px;
+  padding: 1px 7px;
+  cursor: pointer;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.tfe-rp-close:hover { background: #200a0a; border-color: #ef5350; color: #ef5350; }
+
+/* Result banner */
+.tfe-rp-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #0a1220;
+  flex-shrink: 0;
+}
+
+.tfe-rp-result-text {
+  font-size: 14px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.tfe-rp-pick {
+  flex: 1;
+  font-size: 10px;
+  color: #6a8aaa;
+}
+
+.tfe-rp-pnl {
+  font-size: 18px;
+  font-weight: 900;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Body */
+.tfe-rp-body {
+  padding: 6px 0;
+  overflow-y: auto;
+  flex: 1;
+}
+.tfe-rp-body::-webkit-scrollbar { width: 3px; }
+.tfe-rp-body::-webkit-scrollbar-thumb { background: #1a3050; border-radius: 2px; }
+
+.tfe-rp-th {
+  color: #4a7aaa;
+  font-size: 8.5px;
+  text-align: left;
+  padding: 3px 6px;
+  border-bottom: 1px solid #0e1e30;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #050508;
+  white-space: nowrap;
+}
+
+.tfe-rp-fc-win {
+  padding: 5px 12px;
+  font-size: 10px;
+  color: '#4db6ac';
+  background: #0a1a18;
+  border-top: 1px solid #0e1e30;
+  color: #4db6ac;
+}
+
+/* Dashboard stats grid */
+.tfe-dash-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #0a1220;
+  border-bottom: 1px solid #0a1220;
+  flex-shrink: 0;
+}
+
+.tfe-dash-stat {
+  background: #0c0c1c;
+  padding: 8px 6px;
+  text-align: center;
+}
+
+.tfe-dash-val {
+  font-size: 16px;
+  font-weight: 900;
+  color: #c0d0e0;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.tfe-dash-lbl {
+  font-size: 8.5px;
+  color: #2a4060;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+/* Dashboard toggle button */
+#tfe-dash-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999998;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #0a1e3a, #0f0a30);
+  border: 1px solid #1a3a7a;
+  border-radius: 20px;
+  color: #4a9eff;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  transition: all 0.15s;
+}
+#tfe-dash-toggle:hover {
+  background: linear-gradient(135deg, #142848, #1a1040);
+  box-shadow: 0 6px 24px rgba(74,158,255,0.2);
+}
+
+/* Price source indicators */
+.tfe-price-src {
+  font-size: 9px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+.tfe-price-pending {
+  font-size: 10px;
+  color: #aaaa60;
+  display: block;
+  padding: 3px 0;
+}
+
+/* ── Wider dashboard for new columns ── */
+#tfe-dashboard {
+  width: 680px !important;
+}
+
+/* Shared table cell style */
+.tfe-dash-row td,
+.tfe-dc {
+  padding: 3px 5px;
+  font-size: 9px;
+  border-bottom: 1px solid #080814;
+  vertical-align: middle;
+  color: #7a9abb;
+}
+
+.tfe-dash-row:hover td {
+  background: #0a0a18;
+}
+
+/* ── Sortable table headers ─────────────────────────── */
+.tfe-sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.tfe-sortable:hover {
+  color: #7aaad0;
+  background: #0a0a18;
+}

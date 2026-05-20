@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "Greyhound Edge",
+  "version": "5.1.3",
+  "description": "Advanced greyhound scoring — Dark Pro UI, track data, grade-par times, trainer edge and structural trap bias",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://www.timeform.com/*",
+    "*://www.oddschecker.com/*",
+    "*://www.betfair.com/*",
+    "http://localhost:7329/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.timeform.com/greyhound-racing/racecards/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://www.timeform.com/greyhound-racing/results*",
+        "*://www.timeform.com/greyhound-racing/",
+        "*://www.timeform.com/greyhound-racing"
+      ],
+      "js": [
+        "results_tracker.js"
+      ],
+      "css": [
+        "tracker.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Greyhound Edge v5",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://localhost:7329"
+  }
+}
