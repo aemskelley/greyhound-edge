@@ -1,4 +1,4 @@
-TFE SYSTEM - CLEAN INSTALL v4.2.0
+TFE SYSTEM - CLEAN INSTALL v5.1.3
 ==================================
 
 FOLDER STRUCTURE
@@ -49,7 +49,7 @@ Evening (after racing):
     Results scraper runs automatically via run_tfe.bat
 
 
-WHAT'S IN THIS VERSION (v4.2.0)
+WHAT'S IN THIS VERSION  (v5.1.3)
 ---------------------------------
 Extension fixes since original:
 - Full component breakdown now stored on every scored dog (RS_/PTS_ columns populated in backtests)
